@@ -53,8 +53,8 @@ const CertificateDetail = ({ certificate, userInfo, onClose }: CertificateDetail
   if (!certificate) return null;
   
   return (
-    <div className="fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center z-50">
-      <div className="bg-white rounded-lg w-2/3 max-w-3xl">
+    <div className="fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center z-50 overflow-hidden">
+      <div className="bg-white rounded-lg w-2/3 max-w-3xl max-h-[90vh] flex flex-col">
         <div className="p-4 border-b flex justify-between items-center">
           <h2 className="text-lg font-semibold">증명서 상세 정보</h2>
           <button 
@@ -65,7 +65,7 @@ const CertificateDetail = ({ certificate, userInfo, onClose }: CertificateDetail
           </button>
         </div>
         
-        <div className="p-6">
+        <div className="p-6 overflow-y-auto">
           <div className="border p-8 mb-6 relative">
             {/* 증명서 워터마크 */}
             <div className="absolute inset-0 flex items-center justify-center opacity-5 pointer-events-none">
