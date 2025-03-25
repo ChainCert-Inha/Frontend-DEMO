@@ -1,5 +1,6 @@
 import React from 'react';
 import { Shield, Download } from 'lucide-react';
+import qrCode from '../assets/qrcode_186487637_1a2a51efe27f47988b2678b60a605aac.png';
 
 interface Certificate {
   id: number;
@@ -123,7 +124,7 @@ const CertificateDetail = ({ certificate, userInfo, onClose }: CertificateDetail
             <div className="text-center mb-4">
               <div className="inline-block border p-3 rounded">
                 <img 
-                  src="/api/placeholder/150/150" 
+                  src={qrCode} 
                   alt="QR 코드"
                   className="w-32 h-32"
                 />
