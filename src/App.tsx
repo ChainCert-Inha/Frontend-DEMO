@@ -79,8 +79,7 @@ interface UserProfileProps {
 
 // CertificateDetail 컴포넌트의 props 인터페이스
 interface CertificateDetailProps {
-  certificate: Certificate | null;
-  userInfo: UserInfo;
+  cert: Certificate | null;
   onClose: () => void;
 }
 
@@ -240,6 +239,7 @@ const ChainCertApp = () => {
     return <Landing onEnterApp={() => setShowLandingPage(false)} />;
   }
 
+
   return (
     <div className="flex h-screen bg-gray-100">
       {/* 사이드바 */}
@@ -343,7 +343,7 @@ const ChainCertApp = () => {
         {showCertModal && selectedCert && (
           <CertificateDetail 
             certificate={selectedCert} 
-            userInfo={userInfo} 
+            userInfo={userInfo}
             onClose={() => setShowCertModal(false)} 
           />
         )}
@@ -351,5 +351,6 @@ const ChainCertApp = () => {
     </div>
   );
 };
+
 
 export default ChainCertApp;

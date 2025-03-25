@@ -1,5 +1,10 @@
 import React from 'react';
 import { Shield, ChevronRight, Globe, Briefcase, Building } from 'lucide-react';
+// 이미지 파일 import
+import inhaUnivLogo from '../assets/inhauniv.jpeg';
+import naverLogo from '../assets/naver.png';
+import blockchainImage from '../assets/blockchain.jpeg';
+import kakao from '../assets/kakao.png';
 
 interface LandingProps {
   onEnterApp: () => void;
@@ -15,7 +20,7 @@ const Landing = ({ onEnterApp }: LandingProps) => {
       issuedCerts: 1458,
       activeSince: '2023-05',
       plan: 'Enterprise',
-      logo: '/api/placeholder/64/64'
+      logo: inhaUnivLogo
     },
     {
       id: 2,
@@ -24,7 +29,7 @@ const Landing = ({ onEnterApp }: LandingProps) => {
       issuedCerts: 876,
       activeSince: '2023-06',
       plan: 'Enterprise',
-      logo: '/api/placeholder/64/64'
+      logo: inhaUnivLogo
     },
     {
       id: 3,
@@ -33,7 +38,7 @@ const Landing = ({ onEnterApp }: LandingProps) => {
       verifiedCerts: 543,
       activeSince: '2023-09',
       plan: 'Business',
-      logo: '/api/placeholder/64/64'
+      logo: naverLogo
     },
     {
       id: 4,
@@ -42,7 +47,7 @@ const Landing = ({ onEnterApp }: LandingProps) => {
       verifiedCerts: 412,
       activeSince: '2023-10',
       plan: 'Business',
-      logo: '/api/placeholder/64/64'
+      logo: kakao
     }
   ];
 
@@ -111,7 +116,7 @@ const Landing = ({ onEnterApp }: LandingProps) => {
           </div>
           <div className="md:w-1/2 flex justify-center">
             <img 
-              src="/api/placeholder/500/400" 
+              src={blockchainImage} 
               alt="ChainCert 플랫폼 소개" 
               className="rounded-lg shadow-lg"
             />
