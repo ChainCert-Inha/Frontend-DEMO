@@ -1,5 +1,8 @@
 import React from 'react';
 import { User, Mail, Phone, Calendar, Shield } from 'lucide-react';
+import githubLogo from '../assets/github.jpeg';
+import linkedinLogo from '../assets/linkedin.jpeg';
+import courseraLogo from '../assets/coursera.jpeg';
 
 interface UserInfo {
   name: string;
@@ -198,7 +201,7 @@ const UserProfile = ({ userInfo }: UserProfileProps) => {
             <div className="space-y-3">
               <div className="flex items-center justify-between border-b pb-3">
                 <div className="flex items-center">
-                  <img src="src\assets\github.jpeg" alt="GitHub 로고" className="mr-3 w-[50px]" />
+                  <img src={githubLogo} alt="GitHub 로고" className="mr-3 w-[50px]" />
                   <div>
                     <p className="font-medium">GitHub</p>
                     <p className="text-xs text-gray-500">github.com/inha-kim</p>
@@ -208,7 +211,7 @@ const UserProfile = ({ userInfo }: UserProfileProps) => {
               </div>
               <div className="flex items-center justify-between border-b pb-3">
                 <div className="flex items-center">
-                  <img src="src\assets\linkedin.jpeg" alt="LinkedIn 로고" className="mr-3 w-[50px]" />
+                  <img src={linkedinLogo} alt="LinkedIn 로고" className="mr-3 w-[50px]" />
                   <div>
                     <p className="font-medium">LinkedIn</p>
                     <p className="text-xs text-gray-500">linkedin.com/in/inha-kim</p>
@@ -218,7 +221,7 @@ const UserProfile = ({ userInfo }: UserProfileProps) => {
               </div>
               <div className="flex items-center justify-between">
                 <div className="flex items-center">
-                  <img src="src\assets\coursera.jpeg" alt="Coursera 로고" className="mr-3 w-[50px]" />
+                  <img src={courseraLogo} alt="Coursera 로고" className="mr-3 w-[50px]" />
                   <div>
                     <p className="font-medium">Coursera</p>
                     <p className="text-xs text-gray-500">미연결</p>
