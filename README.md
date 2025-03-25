@@ -1,5 +1,5 @@
 # 2025 인하대학교 AI 해커톤 
-- ChainCert 비즈니스 모델 기획 및 개발
+- 'ChainCert' 비즈니스 모델 기획 및 개발
   ![KakaoTalk_Photo_2025-03-25-19-28-44](https://github.com/user-attachments/assets/ef6efea2-f360-4132-9226-e074b5b408bf)
 
 # React + TypeScript + Vite
