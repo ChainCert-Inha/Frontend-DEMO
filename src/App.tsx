@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { Bell, Award, FileText, User, LogOut, Search, Shield, Calendar } from 'lucide-react';
-import Landing from './components/Landing';
+// import Landing from './components/Landing';
 import Dashboard from './components/dashboard';
 import VerificationSystem from './components/verification';
 import VerificationHistory from './components/verification-history';
@@ -235,9 +235,9 @@ const ChainCertApp = () => {
   ];
 
   // 랜딩 페이지 표시
-  if (showLandingPage) {
-    return <Landing onEnterApp={() => setShowLandingPage(false)} />;
-  }
+  // if (showLandingPage) {
+  //   return <Landing onEnterApp={() => setShowLandingPage(false)} />;
+  // }
 
 
   return (
