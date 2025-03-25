@@ -49,7 +49,7 @@ interface DashboardProps {
   onCertClick: (cert: Certificate) => void;
 }
 
-const Dashboard: React.FC<DashboardProps> = ({ certificates, userInfo, onCertClick }) => {
+const Dashboard = ({ certificates, userInfo, onCertClick }: DashboardProps) => {
   // 인증된 증명서와 미인증 증명서 분리
   const verifiedCerts = certificates.filter(cert => cert.verified);
   const pendingCerts = certificates.filter(cert => !cert.verified);

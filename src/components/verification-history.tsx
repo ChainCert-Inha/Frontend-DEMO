@@ -9,6 +9,7 @@ interface VerificationHistoryProps {
     date: string;
     purpose: string;
     status: string;
+    verifierContact: string;
   }[];
 }
 

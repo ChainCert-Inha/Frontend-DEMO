@@ -4,11 +4,14 @@ import { User, Mail, Phone, Calendar, Shield } from 'lucide-react';
 interface UserInfo {
   name: string;
   studentId: string;
+  department: string;
   email: string;
   phone: string;
   enrollDate: string;
+  totalCerts: number;
   publicKey: string;
   walletAddress: string;
+  profileImage: string;
 }
 
 interface UserProfileProps {

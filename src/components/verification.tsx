@@ -1,7 +1,24 @@
 import React from 'react';
 import { Search, Shield } from 'lucide-react';
 
-const VerificationSystem = () => {
+interface UserInfo {
+  name: string;
+  studentId: string;
+  department: string;
+  email: string;
+  phone: string;
+  enrollDate: string;
+  totalCerts: number;
+  publicKey: string;
+  walletAddress: string;
+  profileImage: string;
+}
+
+interface VerificationSystemProps {
+  userInfo?: UserInfo;
+}
+
+const VerificationSystem = ({ userInfo }: VerificationSystemProps) => {
   return (
     <div className="p-6">
       <div className="max-w-3xl mx-auto bg-white rounded-lg shadow">
